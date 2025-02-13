@@ -1,5 +1,14 @@
 Mobile Version:
 - Only shows interactive monologe like in Stanley Parable Ultra Deluxe when it asks you for time of day and shit
-- says like "Broo..."
-    - Click Next -> "Why are you on Mobile" or smth.
-    - Click NExt -> ....
+- says like "Oh..." -> "Uhm..."
+    - Click Next -> "I dont think this Website was designed to be viewed on a..." -> "*Smartphone.*"
+    - Click NExt -> "I know, who would do such a thing" -> "Im sure you dont actually use a Smartphone and this was just an accident"
+    - "You accidentially took your Sisters smartphone, while you were looking to steal her vape"
+    - "and then you ACCIDENTIALLY opened rorita.moe, because you just love this website right?"
+    - "Well, Im gonna give you another chance!"
+    - "Another chance to make it up"
+    - "All you need to do is find you nearest electronic device, with a 16 to 9 screen and an internet connection and open rorita.moe on there"
+    - "..."
+    - "Come on I am waiting..."
+    - "..."
+    - "Okay now Im feeling kinda stupid."
