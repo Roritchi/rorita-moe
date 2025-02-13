@@ -14,6 +14,12 @@ body {
   text-align: center;
 }
 
+header {
+  width: 100vw;
+  min-height: 184px;
+  display: flex;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -51,6 +57,39 @@ button {
   margin: 2rem;
 }
 
+/* Steam PP */
+$steam-pp-ml: 2rem;
+
+@keyframes from_center {
+  0% {
+    left: calc(50vw - (184px / 2));
+  }
+
+  100% {
+    left: $steam-pp-ml;
+  }
+}
+
+.steam-pp-wrapper {
+  position: relative;
+  margin: $steam-pp-ml 0;
+  height: 184px;
+  width: calc(184px + 4rem);
+}
+
+.playerAvatar {
+  position: absolute;
+  height: 184px;
+  width: 184px;
+  left: calc(50vw - (184px / 2));
+  animation-name: from_center;
+  animation-delay: 2s;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: forwards;
+}
+
+
 .playerAvatarAutoSizeInner {
   position: relative;
 }
@@ -64,4 +103,99 @@ button {
   >img {
     transform: scale(1.22);
   }
+}
+
+/* Playing Cards */
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  opacity: 0;
+  width: 100%;
+
+  gap: 1rem;
+  margin-top: -10rem;
+  pointer-events: none;
+
+  animation-name: fade_in;
+  animation-delay: 2.5s;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.card .image {
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card .text {
+  font-family: 'Chelsea Market', cursive;
+  height: 20%;
+  margin: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 80%;
+  bottom: 20%;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  margin: auto auto;
+  background: #383030;
+  border-radius: 20px;
+  overflow: hidden;
+  webkit-box-shadow: 0px 0px 64px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 0px 64px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 64px 0px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.card-hover {
+  cursor: pointer;
+  transition: transform 500ms ease;
+}
+
+.card-hover:hover {
+  transform: translateY(2rem);
+}
+
+.card-content {
+  transform-style: preserve-3d;
+  height: 100%;
+
+}
+
+
+/* canvas */
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
 }
