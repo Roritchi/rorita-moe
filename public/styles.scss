@@ -176,6 +176,7 @@ $steam-pp-ml: 2rem;
 .card-hover {
   cursor: pointer;
   transition: transform 500ms ease;
+  // position: relative;
 }
 
 .card-hover:hover {
@@ -188,6 +189,16 @@ $steam-pp-ml: 2rem;
 
 }
 
+/* card balls */
+.ball {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: aquamarine;
+  bottom: -10px;
+  pointer-events: none;
+}
 
 /* canvas */
 .canvas {

@@ -16,9 +16,12 @@ console_error_panic_hook = "0.1"
 web-sys = { version = "0.3", features = [
     "Document",
     "Window",
-    "CanvasRenderingContext2d",
     "HtmlCanvasElement",
+    "CanvasGradient",
+    "CanvasRenderingContext2d"
 ] }
+leptos-use = "0.15.6"
+getrandom = { version = "0.2", features = ["js"] }
 
 # utils
 # strum = { version = "0.25", features = ["derive", "strum_macros"] }
@@ -31,8 +34,9 @@ wasm-bindgen-test = "0.3"
 web-sys = { version = "0.3", features = [
     "Document",
     "Window",
-    "CanvasRenderingContext2d",
     "HtmlCanvasElement",
+    "CanvasGradient",
+    "CanvasRenderingContext2d"
 ] }
 
 
